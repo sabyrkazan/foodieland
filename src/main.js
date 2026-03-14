@@ -1,3 +1,3 @@
-import InputMaskCollection from '@/modules/InputMaskCollection'
+import { MobileMenu } from '@/modules/MobileMenu'
 
-new InputMaskCollection()
+new MobileMenu()
