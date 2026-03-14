@@ -1,10 +1,11 @@
 import './Socials.scss'
+import clsx from 'clsx'
 import { Icon } from '@/components/Icon'
 import { socialItems } from './socials.data'
 
-export default () => {
+export default ({ className }) => {
   return (
-    <div className="soc1als header__soc1als">
+    <div className={clsx('soc1als', className)}>
       <ul className="soc1als__list">
         {socialItems.map(({ label, icon }) => (
           <li className="soc1als__item" key={label}>
