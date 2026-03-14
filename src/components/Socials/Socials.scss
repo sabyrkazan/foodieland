@@ -3,6 +3,10 @@
     display: flex;
     align-items: center;
     column-gap: 40px;
+
+    @include tablet {
+      column-gap: 20px;
+    }
   }
 
   &__item {
