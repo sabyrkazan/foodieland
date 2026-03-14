@@ -10,7 +10,7 @@ export default ({ url }) => {
       <div className="header__inner container">
         <Logo className="header__logo" loading="eager" />
         <Menu className="header__menu" items={menuItems} url={url} />
-        <Socials className="header__socials" />
+        <Socials className="header__soc1als" />
       </div>
     </header>
   )
