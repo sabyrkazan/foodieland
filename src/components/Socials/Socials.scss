@@ -4,4 +4,19 @@
     align-items: center;
     column-gap: 40px;
   }
+
+  &__item {
+    display: flex;
+  }
+
+  &__link {
+    position: relative;
+
+    &::before {
+      content: '';
+
+      @include abs-center;
+      @include square(44px);
+    }
+  }
 }
