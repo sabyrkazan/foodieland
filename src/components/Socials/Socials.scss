@@ -17,10 +17,10 @@
     position: relative;
 
     &::before {
-      content: '';
-
       @include abs-center;
       @include square(44px);
+
+      content: '';
     }
   }
 }
