@@ -1,31 +1,36 @@
 :root {
-  --color-white: #ffffff;
-  --color-black: #000000;
+  --color-white: #fff;
+  --color-black: #000;
 
-  --color-accent: #e50000;
+  --color-black-50: rgb(0 0 0 / 0.05);
+  --color-black-100: rgb(0 0 0 / 0.1);
+  --color-black-600: rgb(0 0 0 / 0.6);
 
-  --color-gray: #808080;
+  --color-gray: #dbe2e5;
 
-  --border: var(--border-width-m) solid var(--color-accent);
+  --color-accent: #e7fafe;
+  --color-accent-alt: #e7f9fd;
 
-  --border-width-xl: 6px;
-  --border-width-l: 4px;
-  --border-width-m: 3px;
-  --border-width-s: 1px;
+  --color-red: #ff6363;
+  --color-red-alt: #ff7967;
 
-  --border-radius-l: 12px;
-  --border-radius-m: 10px;
-  --border-radius: 8px;
-  --border-radius-xs: 6px;
-  --border-radius-xxs: 5px;
-  --border-radius-xxxs: 4px;
+  --box-shadow: 10px 20px 40px rgb(41 64 70 / 0.1);
 
-  --font-family-base: 'Manrope';
+  --gradient: linear-gradient(180deg, rgb(231 249 253 / 0) 0%, var(--color-accent-alt) 100%);
 
-  --container-width: #{fluid-to-laptop(
-      $container-desktop-width,
-      $container-laptop-width
-    )};
+  --border: 1px solid var(--color-gray-100);
+
+  --border-radius-l: 60px;
+  --border-radius-m: 30px;
+  --border-radius: 24px;
+  --border-radius-xs: 20px;
+  --border-radius-xxs: 16px;
+
+  --font-family-base: 'Inter';
+  --font-family-accent: 'Lobster';
+  --font-family-copyright: 'Eudoxus Sans';
+
+  --container-width: #{$container-desktop-width}px;
   --container-padding-x: 16px;
 
   --transition-duration: 0.2s;
