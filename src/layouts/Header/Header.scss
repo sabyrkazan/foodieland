@@ -12,7 +12,11 @@
   &__menu {
     @include mobile {
       position: fixed;
+      z-index: var(--layer-mobile-menu);
       inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       background-color: var(--color-white);
 
       &:not(.is-active) {
@@ -23,7 +27,7 @@
     .menu__list {
       @include mobile {
         flex-direction: column;
-        row-gap: 10px;
+        row-gap: 30px;
       }
     }
   }

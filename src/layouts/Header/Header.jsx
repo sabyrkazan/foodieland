@@ -10,7 +10,7 @@ export default ({ url }) => {
     <header className="header" data-js-overlay-menu="">
       <div className="header__inner container">
         <Logo className="header__logo" loading="eager" />
-        <Menu className="header__menu" items={menuItems} url={url} />
+        <Menu className="header__menu is-active" items={menuItems} url={url} />
         <Socials className="header__soc1als" />
         <BurgerButton className="visible-mobile" />
       </div>
