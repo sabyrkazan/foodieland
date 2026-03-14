@@ -1,3 +1,4 @@
+import './Socials.scss'
 import { Icon } from '@/components/Icon'
 import { socialItems } from './socials.data'
 
