@@ -5,27 +5,27 @@ html {
 }
 
 body {
-  @include fluid-text(18, 14);
-
   display: flex;
   flex-direction: column;
   font-family: var(--font-family-base), sans-serif;
-  color: var(--color-white);
-  background-color: var(--color-black);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-black);
+  background-color: var(--color-white);
 }
 
 h1,
 .h1 {
-  @include fluid-text(58, 28);
+  @include fluid-text(64, 28);
 
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h2,
 .h2 {
   @include fluid-text(48, 24);
 
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h3,
