@@ -12,7 +12,7 @@ export default ({ url }) => {
         <Logo className="header__logo" loading="eager" />
         <Menu className="header__menu is-active" items={menuItems} url={url} />
         <Socials className="header__soc1als" />
-        <BurgerButton className="visible-mobile" />
+        <BurgerButton className="header__burger-button visible-mobile" />
       </div>
     </header>
   )
