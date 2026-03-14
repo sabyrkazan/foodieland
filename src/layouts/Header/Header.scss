@@ -1,5 +1,5 @@
 .header {
-  padding-block: 40px;
+  padding-block: fluid(40, 20);
   border-bottom: var(--border);
 
   &__inner {
@@ -7,5 +7,30 @@
     justify-content: space-between;
     align-items: center;
     column-gap: 20px;
+  }
+
+  &__menu {
+    @include mobile {
+      position: fixed;
+      inset: 0;
+      background-color: var(--color-white);
+
+      &:not(.is-active) {
+        @include hide;
+      }
+    }
+
+    .menu__list {
+      @include mobile {
+        flex-direction: column;
+        row-gap: 10px;
+      }
+    }
+  }
+
+  &__soc1als {
+    @include mobile {
+      margin-left: auto;
+    }
   }
 }

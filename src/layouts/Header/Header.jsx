@@ -2,6 +2,7 @@ import './Header.scss'
 import { Logo } from '@/components/Logo'
 import { Socials } from '@/components/Socials'
 import { Menu } from '@/components/Menu'
+import { BurgerButton } from '@/components/BurgerButton'
 import { menuItems } from './header.data'
 
 export default ({ url }) => {
@@ -11,6 +12,7 @@ export default ({ url }) => {
         <Logo className="header__logo" loading="eager" />
         <Menu className="header__menu" items={menuItems} url={url} />
         <Socials className="header__soc1als" />
+        <BurgerButton className="visible-mobile" />
       </div>
     </header>
   )
