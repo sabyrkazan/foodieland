@@ -32,7 +32,7 @@ export default ({
         </div>
         <div className="hero-card__footer">
           <AuthorCard className="hero-card__author" {...author} />
-          <Button className="hero-card__button">
+          <Button className="hero-card__button" href="/">
             <span>View Recipes</span>
             <Icon name="play" hasFill />
           </Button>
