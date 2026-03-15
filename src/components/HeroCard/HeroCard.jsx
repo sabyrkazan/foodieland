@@ -13,6 +13,7 @@ export default ({
   description,
   tags,
   author,
+  badgeImgSrc,
   imgSrc,
 }) => {
   return (
@@ -36,6 +37,7 @@ export default ({
             <Icon name="play" hasFill />
           </Button>
         </div>
+        <Image className="hero-card__badge" src={badgeImgSrc} />
       </div>
       <Image className="hero-card__image" src={imgSrc} />
     </article>

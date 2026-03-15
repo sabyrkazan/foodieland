@@ -44,4 +44,8 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  &__badge {
+    @include abs-x;
+  }
 }
