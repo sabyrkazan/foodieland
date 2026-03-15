@@ -5,8 +5,11 @@
   overflow: hidden;
 
   &__body {
-    background-color: var(--color-accent);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 50px;
+    background-color: var(--color-accent);
   }
 
   &__category {
