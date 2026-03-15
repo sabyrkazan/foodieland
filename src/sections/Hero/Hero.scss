@@ -3,6 +3,10 @@
   margin-inline: auto;
   padding-block: 50px;
 
+  @include laptop {
+    padding-inline: var(--container-padding-x);
+  }
+
   &__slider-item {
     max-width: var(--container-width);
     border-radius: var(--border-radius-l);
