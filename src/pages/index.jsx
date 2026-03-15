@@ -1,4 +1,4 @@
-import Hero from '@/sections/Hero'
+import { Hero } from '@/sections/Hero'
 import Button from '@/components/Button'
 import Field from '@/components/Field'
 
