@@ -9,7 +9,7 @@
   font-size: 14px;
   color: var(--color-white);
   background-color: var(--color-black);
-  border: var(--border);
+  border: none;
   border-radius: var(--border-radius-xxs);
 
   @include hover {
@@ -18,12 +18,8 @@
   }
 
   &--accent {
+    width: 200px;
     color: var(--color-black);
     background-color: var(--color-accent);
-
-    //@include hover {
-    //  color: var(--color-white);
-    //  background-color: var(--color-red);
-    //}
   }
 }
