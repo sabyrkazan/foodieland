@@ -1,8 +1,6 @@
 .hero-card {
   display: flex;
   justify-content: space-between;
-  border-radius: var(--border-radius-l);
-  overflow: hidden;
 
   &__body {
     display: flex;
