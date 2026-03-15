@@ -10,13 +10,16 @@
     column-gap: 16px;
 
     @include mobile {
-      flex-direction: column;
-      align-items: start;
-      row-gap: 20px;
+      display: contents;
     }
   }
 
   &__link {
-    font-size: 16px;
+    font-size: 16px !important;
+
+    @include mobile {
+      order: 1;
+      width: 100%;
+    }
   }
 }
