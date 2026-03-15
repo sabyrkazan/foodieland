@@ -3,8 +3,8 @@ import clsx from 'clsx'
 import { Icon } from '@/components/Icon'
 import { Image } from 'minista'
 import { AuthorCard } from '@/components/AuthorCard'
-import Button from '@/components/Button'
-import buttonPlayIcon from '@/assets/icons/play.svg'
+import { Button } from '@/components/Button'
+import { Tags } from '@/components/Tags'
 
 export default ({
   className,
@@ -26,21 +26,12 @@ export default ({
         <div className="hero-card__description">
           <p>{description}</p>
         </div>
-        <div className="hero-card__tags">
-          <ul className="hero-card__tags-list">
-            {tags.map(({ icon, label }) => (
-              <li className="hero-card__tags-item" key={label}>
-                <Icon name={icon} hasFill />
-                <span className="hero-card__tags-label">{label}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <Tags className="hero-card__tags" tags={tags} />
         <div className="hero-card__footer">
           <AuthorCard className="hero-card__author" {...author} />
           <Button className="hero-card__button">
             <span>View Recipes</span>
-            <Icon name={buttonPlayIcon} hasFill />
+            <Icon name='play' hasFill />
           </Button>
         </div>
       </div>
