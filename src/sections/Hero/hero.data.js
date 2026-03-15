@@ -53,7 +53,7 @@ export const slides = [
     ],
     author: {
       imgSrc: authorImage,
-      name: '',
+      name: 'John Smith',
       date: {
         label: '15 March 2022',
         dateTime: '2022-03-15',
@@ -82,7 +82,7 @@ export const slides = [
     ],
     author: {
       imgSrc: authorImage,
-      name: '',
+      name: 'John Smith',
       date: {
         label: '15 March 2022',
         dateTime: '2022-03-15',
