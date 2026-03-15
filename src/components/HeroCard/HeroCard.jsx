@@ -31,7 +31,7 @@ export default ({
             {tags.map(({ icon, label }) => (
               <li className="hero-card__tags-item" key={label}>
                 <Icon name={icon} hasFill />
-                <span>{label}</span>
+                <span className="hero-card__tags-label">{label}</span>
               </li>
             ))}
           </ul>
