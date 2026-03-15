@@ -1,5 +1,8 @@
 import './Categories.scss'
 import { Section } from '@/layouts/Section'
+import { CategoryCard } from '@/components/CategoryCard'
+import { Grid } from '@/components/Grid'
+import { categories } from './categories.data'
 
 export default () => {
   return (
@@ -7,6 +10,12 @@ export default () => {
       title="Categories"
       titleId="categories"
       linkLabel="View All Categories"
-    ></Section>
+    >
+      <Grid columns={6}>
+        {categories.map(({ id, ...category }) => (
+          <CategoryCard key={id} {...category} />
+        ))}
+      </Grid>
+    </Section>
   )
 }
