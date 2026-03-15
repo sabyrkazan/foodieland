@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     column-gap: 10px;
-    padding: 8px 16px;
+    padding: 8px fluid(16, 14);
     background-color: var(--color-black-50);
     border-radius: var(--border-radius-m);
   }
