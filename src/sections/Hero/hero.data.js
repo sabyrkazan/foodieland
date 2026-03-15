@@ -1,6 +1,7 @@
 import categoryImage from '@/assets/images/category/scroll.png'
 import authorImage from '@/assets/images/author/author.png'
 import heroCardBackgroundImage from '@/assets/images/hero-card/hero-card-bg.jpg'
+import badgeImage from '@/assets/images/hero-card/badge.svg'
 
 export const slides = [
   {
@@ -30,6 +31,7 @@ export const slides = [
         dateTime: '2022-03-15',
       },
     },
+    badgeImgSrc: badgeImage,
     imgSrc: heroCardBackgroundImage,
   },
   {
@@ -59,6 +61,7 @@ export const slides = [
         dateTime: '2022-03-15',
       },
     },
+    badgeImgSrc: badgeImage,
     imgSrc: heroCardBackgroundImage,
   },
   {
@@ -88,6 +91,7 @@ export const slides = [
         dateTime: '2022-03-15',
       },
     },
+    badgeImgSrc: badgeImage,
     imgSrc: heroCardBackgroundImage,
   },
 ]
