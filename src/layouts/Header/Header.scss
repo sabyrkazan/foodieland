@@ -29,6 +29,8 @@
       @include mobile {
         flex-direction: column;
         row-gap: 30px;
+        overflow-y: auto;
+        padding-block: 30px;
       }
     }
   }
