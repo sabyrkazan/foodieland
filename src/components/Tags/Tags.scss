@@ -1,0 +1,19 @@
+.tags {
+  &__list {
+    display: flex;
+    column-gap: 16px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 8px 16px;
+    background-color: var(--color-black-50);
+    border-radius: var(--border-radius-m);
+  }
+
+  &__label {
+    color: var(--color-black-600);
+  }
+}
