@@ -18,6 +18,7 @@
       flex-direction: column;
       justify-content: center;
       background-color: var(--color-white);
+      transition-duration: var(--transition-duration);
 
       &:not(.is-active) {
         @include hide;
