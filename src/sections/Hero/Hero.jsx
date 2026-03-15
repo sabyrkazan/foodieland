@@ -11,7 +11,7 @@ export default () => {
       <div
         className="hero__slider swiper"
         data-js-slider={JSON.stringify({
-          spaceBetween: 40,
+          spaceBetween: 120,
           slidesPerView: 'auto',
           centeredSlides: true,
           initialSlide: 1,
@@ -20,7 +20,7 @@ export default () => {
       >
         <ul className="hero__slider-list swiper-wrapper">
           {slides.map(({ id, ...slide }) => (
-            <li className="hero__slider-item swiper-slide container" key={id}>
+            <li className="hero__slider-item swiper-slide" key={id}>
               <HeroCard className="hero__slider-card" {...slide} />
             </li>
           ))}
