@@ -5,12 +5,24 @@
 
   &__header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    column-gap: 16px;
 
-    @include mobile {
-      display: contents;
+    &--mode-justify-between {
+      justify-content: space-between;
+      column-gap: 16px;
+
+      @include mobile {
+        display: contents;
+      }
+    }
+
+    &--mode-vertical {
+      flex-direction: column;
+      row-gap: 24px;
+
+      .section__description {
+        text-align: center;
+      }
     }
   }
 
