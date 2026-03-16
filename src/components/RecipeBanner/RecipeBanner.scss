@@ -1,0 +1,32 @@
+.recipe-banner {
+  padding-block: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("@/assets/images/recipe-banner/recipe-banner-bg.svg") center/cover no-repeat;
+
+  &__title {
+    max-width: 172px;
+    text-align: center;
+    font-family: var(--font-family-accent), sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--color-white);
+
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__image {
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--color-white-60);
+  }
+}
