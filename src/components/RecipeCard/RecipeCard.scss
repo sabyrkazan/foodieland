@@ -27,18 +27,14 @@
     border-radius: var(--border-radius-xs);
   }
 
-  &__title {
-
-  }
-
   &__tags {
-    display: flex;
-    column-gap: 24px;
-  }
+    .tags__list {
+      column-gap: 24px;
+    }
 
-  &__tag {
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
+    .tags__item {
+      padding: 0;
+      background-color: transparent;
+    }
   }
 }

@@ -1,6 +1,6 @@
 import './RecipeCard.scss'
-import { Icon } from '@/components/Icon'
 import { Image } from 'minista'
+import { Tags } from '@/components/Tags'
 
 export default ({ imgSrc, favoriteImgSrc, title, tags }) => {
   return (
@@ -12,14 +12,7 @@ export default ({ imgSrc, favoriteImgSrc, title, tags }) => {
         <Image className="recipe-card__image" src={imgSrc} />
       </div>
       <h3 className="recipe-card__title h4">{title}</h3>
-      <ul className="recipe-card__tags">
-        {tags.map(({ icon, label }) => (
-          <li className="recipe-card__tag" key={label}>
-            <Icon name={icon} hasFill />
-            <span>{label}</span>
-          </li>
-        ))}
-      </ul>
+      <Tags className="recipe-card__tags" tags={tags} />
     </article>
   )
 }
