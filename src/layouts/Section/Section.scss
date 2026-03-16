@@ -18,7 +18,7 @@
 
     &--mode-vertical {
       flex-direction: column;
-      row-gap: 24px;
+      row-gap: fluid(24, 16);
 
       .section__description {
         text-align: center;
