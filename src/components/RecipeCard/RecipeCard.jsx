@@ -12,7 +12,7 @@ export default ({ imgSrc, favoriteImgSrc, title, tags }) => {
         <Image className="recipe-card__image" src={imgSrc} />
       </div>
       <h3 className="recipe-card__title h4">{title}</h3>
-      <Tags className="recipe-card__tags" tags={tags} />
+      <Tags className="recipe-card__tags" items={tags} />
     </article>
   )
 }

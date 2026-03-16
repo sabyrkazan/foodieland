@@ -28,7 +28,7 @@ export default ({
           <div className="hero-card__description">
             <p>{description}</p>
           </div>
-          <Tags className="hero-card__tags" tags={tags} />
+          <Tags className="hero-card__tags" items={tags} />
         </div>
         <div className="hero-card__footer">
           <AuthorCard className="hero-card__author" {...author} />
