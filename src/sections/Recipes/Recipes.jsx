@@ -1,6 +1,9 @@
 import './Recipes.scss'
 import { Section } from '@/layouts/Section'
 import { Grid } from '@/components/Grid'
+import { RecipeBanner } from '@/components/RecipeBanner'
+import { RecipeCard } from '@/components/RecipeCard'
+import { recipes } from './recipes.data'
 
 export default () => {
   return (
@@ -12,7 +15,13 @@ export default () => {
       descriptionClassName="recipes__description"
     >
       <Grid className="recipes__grid" columns={3}>
-        
+        {recipes.map(({ id, ...recipe }) =>
+          recipe.type === 'banner' ? (
+            <RecipeBanner key={id} />
+          ) : (
+            <RecipeCard key={id} {...recipe} />
+          )
+        )}
       </Grid>
     </Section>
   )
