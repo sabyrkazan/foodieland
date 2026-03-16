@@ -12,6 +12,7 @@ import unfavoriteIcon from '@/assets/icons/heart/heart-solid.svg'
 export const recipes = [
   {
     id: 1,
+    type: 'card',
     imgSrc: wagyuBurger,
     favoriteImgSrc: favoriteIcon,
     title: 'Big and Juicy Wagyu Beef Cheeseburger',
@@ -28,6 +29,7 @@ export const recipes = [
   },
   {
     id: 2,
+    type: 'card',
     imgSrc: roastedSalmon,
     favoriteImgSrc: unfavoriteIcon,
     title: 'Fresh Lime Roasted Salmon with Ginger Sauce',
@@ -44,6 +46,7 @@ export const recipes = [
   },
   {
     id: 3,
+    type: 'card',
     imgSrc: strawberryOatmealPancake,
     favoriteImgSrc: unfavoriteIcon,
     title: 'Strawberry Oatmeal Pancake with Honey Syrup',
@@ -60,6 +63,7 @@ export const recipes = [
   },
   {
     id: 4,
+    type: 'card',
     imgSrc: mixedMayonnaiseSalad,
     favoriteImgSrc: favoriteIcon,
     title: 'Fresh and Healthy Mixed Mayonnaise Salad',
@@ -76,6 +80,7 @@ export const recipes = [
   },
   {
     id: 5,
+    type: 'card',
     imgSrc: chickenMeatballsCreamCheese,
     favoriteImgSrc: unfavoriteIcon,
     title: 'Chicken Meatballs with Cream Cheese',
@@ -96,6 +101,7 @@ export const recipes = [
   },
   {
     id: 7,
+    type: 'card',
     imgSrc: fruityOrangeBlueberryPancake,
     favoriteImgSrc: favoriteIcon,
     title: 'Fruity Pancake with Orange & Blueberry',
@@ -112,6 +118,7 @@ export const recipes = [
   },
   {
     id: 8,
+    type: 'card',
     imgSrc: onePotChickenRice,
     favoriteImgSrc: unfavoriteIcon,
     title: 'The Best Easy One Pot Chicken and Rice',
@@ -128,6 +135,7 @@ export const recipes = [
   },
   {
     id: 9,
+    type: 'card',
     imgSrc: creamyChickenBaconPasta,
     favoriteImgSrc: unfavoriteIcon,
     title: 'The Creamiest Creamy Chicken and Bacon Pasta',
