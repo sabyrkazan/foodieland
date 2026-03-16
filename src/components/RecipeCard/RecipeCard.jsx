@@ -11,7 +11,7 @@ export default ({ imgSrc, favoriteImgSrc, title, tags }) => {
         </div>
         <Image className="recipe-card__image" src={imgSrc} />
       </div>
-      <h3 className="recipe-card__title">{title}</h3>
+      <h3 className="recipe-card__title h4">{title}</h3>
       <ul className="recipe-card__tags">
         {tags.map(({ icon, label }) => (
           <li className="recipe-card__tag" key={label}>
