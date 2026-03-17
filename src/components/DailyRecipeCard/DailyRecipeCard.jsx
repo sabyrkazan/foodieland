@@ -11,7 +11,7 @@ export default ({ imgSrc, favoriteImgSrc, title, tags }) => {
         </div>
         <Image className="daily-recipe-card__image" src={imgSrc} />
       </div>
-      <h3 className="daily-recipe-card__title h4">{title}</h3>
+      <h3 className="daily-recipe-card__title">{title}</h3>
       <Tags className="daily-recipe-card__tags" items={tags} />
     </article>
   )
