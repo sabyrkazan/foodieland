@@ -20,7 +20,7 @@ export default () => {
           </div>
           <Button className="banner__button">Learn More</Button>
         </div>
-        <Image src={bannerBackgroundImage} />
+        <Image className="banner__image" src={bannerBackgroundImage} />
       </div>
     </div>
   )
