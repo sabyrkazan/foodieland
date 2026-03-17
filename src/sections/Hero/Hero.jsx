@@ -19,7 +19,7 @@ export default () => {
         })}
       >
         <ul className="hero__slider-list swiper-wrapper">
-          {slides.map(({ id, ...slide }) => (
+          {slides.map(({ id, slide }) => (
             <li className="hero__slider-item swiper-slide" key={id}>
               <HeroCard className="hero__slider-card" {...slide} />
             </li>
