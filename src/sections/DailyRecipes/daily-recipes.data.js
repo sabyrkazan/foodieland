@@ -1,10 +1,18 @@
+import tropicalFruitSalad from '@/assets/images/daily-recipes/1.jpg'
+import wagyuCheeseburger from '@/assets/images/daily-recipes/2.jpg'
+import japaneseFriedRice from '@/assets/images/daily-recipes/3.jpg'
+import cauliflowerTaco from '@/assets/images/daily-recipes/4.jpg'
+import rainbowChickenSalad from '@/assets/images/daily-recipes/5.jpg'
+import bbqSpicySandwich from '@/assets/images/daily-recipes/6.jpg'
+import veganLettuceWraps from '@/assets/images/daily-recipes/7.jpg'
+import chickenRamenSoup from '@/assets/images/daily-recipes/8.jpg'
 import favoriteIcon from '@/assets/icons/heart/heart-fill.svg'
 import unfavoriteIcon from '@/assets/icons/heart/heart-solid.svg'
 
 export const dailyRecipes = [
   {
     id: 1,
-    imgSrc: '',
+    imgSrc: tropicalFruitSalad,
     favoriteImgSrc: favoriteIcon,
     title: 'Mixed Tropical Fruit Salad with Superfood Boosts',
     tags: [
@@ -20,7 +28,7 @@ export const dailyRecipes = [
   },
   {
     id: 2,
-    imgSrc: '',
+    imgSrc: wagyuCheeseburger,
     favoriteImgSrc: unfavoriteIcon,
     title: 'Big and Juicy Wagyu Beef Cheeseburger',
     tags: [
@@ -36,7 +44,7 @@ export const dailyRecipes = [
   },
   {
     id: 3,
-    imgSrc: '',
+    imgSrc: japaneseFriedRice,
     favoriteImgSrc: favoriteIcon,
     title: 'Healthy Japanese Fried Rice with Asparagus',
     tags: [
@@ -52,7 +60,7 @@ export const dailyRecipes = [
   },
   {
     id: 4,
-    imgSrc: '',
+    imgSrc: cauliflowerTaco,
     favoriteImgSrc: unfavoriteIcon,
     title: 'Cauliflower Walnut Vegetarian Taco Meat',
     tags: [
@@ -68,7 +76,7 @@ export const dailyRecipes = [
   },
   {
     id: 5,
-    imgSrc: '',
+    imgSrc: rainbowChickenSalad,
     favoriteImgSrc: favoriteIcon,
     title: 'Rainbow Chicken Salad with Almond Honey Mustard Dressing',
     tags: [
@@ -84,7 +92,7 @@ export const dailyRecipes = [
   },
   {
     id: 6,
-    imgSrc: '',
+    imgSrc: bbqSpicySandwich,
     favoriteImgSrc: unfavoriteIcon,
     title: 'Barbeque Spicy Sandwiches with Chips',
     tags: [
@@ -100,7 +108,7 @@ export const dailyRecipes = [
   },
   {
     id: 7,
-    imgSrc: '',
+    imgSrc: veganLettuceWraps,
     favoriteImgSrc: unfavoriteIcon,
     title: 'Firecracker Vegan Lettuce Wraps - Spicy!',
     tags: [
@@ -116,7 +124,7 @@ export const dailyRecipes = [
   },
   {
     id: 8,
-    imgSrc: '',
+    imgSrc: chickenRamenSoup,
     favoriteImgSrc: favoriteIcon,
     title: 'Chicken Ramen Soup with Mushroom',
     tags: [
