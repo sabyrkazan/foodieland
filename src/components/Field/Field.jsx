@@ -1,22 +1,18 @@
 import './Field.scss'
-import getIdFromTitle from '@/utils/getIdFromTitle'
 import clsx from 'clsx'
+import { getIdFromTitle } from '@/utils'
 
-export default (props) => {
-  const {
-    className,
-    id = getIdFromTitle(props.label),
-    label,
-    /**
-     * undefined (default) | 'email' | 'textarea'
-     */
-    type,
-    placeholder,
-    isRequired,
-    inputMode,
-    mask,
-  } = props
-
+export default ({
+  className,
+  id = getIdFromTitle(label),
+  label,
+  isLabelHidden = false,
+  type,
+  placeholder,
+  isRequired,
+  inputMode,
+  mask,
+}) => {
   const Component = type === 'textarea' ? 'textarea' : 'input'
 
   const extraAttrs = {}
@@ -27,7 +23,10 @@ export default (props) => {
 
   return (
     <div className={clsx('field', className)}>
-      <label className="field__label" htmlFor={id}>
+      <label
+        className={clsx('field__label', isLabelHidden && 'visually-hidden')}
+        htmlFor={id}
+      >
         {label}
         {isRequired && (
           <span className="field__required-star" aria-hidden="true">
