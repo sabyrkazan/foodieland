@@ -24,7 +24,7 @@ export default () => {
               />
             ))}
           </Grid>
-          <Button href="/">
+          <Button className='instagram-view__button' href="/">
             <span>Visit Our Instagram</span>
             <Icon name="instagram" hasFill />
           </Button>
