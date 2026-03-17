@@ -1,157 +1,95 @@
-# 🧱 Friendly Frontend Starter
+# 🍲 Foodieland
 
-Стартер для современных фронтенд-проектов на базе [Minista](https://minista.qranoko.jp/) с поддержкой JSX (без React), SCSS, линтинга и автоформатирования.
+Добро пожаловать в **Foodieland** — стильный и функциональный проект кулинарного блога, созданный для всех любителей вкусной еды и красивого дизайна. Этот проект представляет собой демонстрацию современного фронтенд-стека для создания быстрых и отзывчивых статических сайтов.
 
-## 🚀 Быстрый старт
+## ✨ Основные возможности (Features)
 
-Создайте проект с помощью `npm create`:
+- **🍳 Вкусные рецепты:** Каталог с карточками рецептов, временем приготовления и категорией блюд.
+- **📁 Умные категории:** Удобная навигация по типам блюд (Завтрак, Обед, Ужин, Десерты и др.).
+- **📸 Instagram-фид:** Интегрированная секция для просмотра кулинарных шедевров из соцсетей.
+- **📩 Форма подписки:** Стильная подписка на рассылку новых рецептов.
+- **📱 Полная адаптивность:** Проект отлично выглядит на смартфонах, планшетах и десктопах.
+- **⚡️ Быстрота работы:** Генерация статических страниц (SSG) для мгновенной загрузки.
 
-```bash
-npm create friendly-frontend@latest
-```
+## 🛠 Технологический стек
 
-Для TypeScript-версии добавьте флаг `--ts`:
+Проект построен на базе **Friendly Frontend Starter** с использованием следующих технологий:
 
-```bash
-npm create friendly-frontend@latest -- --ts
-```
-
-## 📦 Что внутри
-
-Стартер включает:
-
-- [Minista](https://minista.qranoko.jp/) с поддержкой JSX без React
-- Сборка через [Vite](https://vite.dev/)
-- Стили:
-  - [SCSS](https://sass-lang.com/)
-  - [PostCSS](https://postcss.org/) + плагины: [`preset-env`](https://www.npmjs.com/package/postcss-preset-env), [`pxtorem`](https://www.npmjs.com/package/postcss-pxtorem)
-  - CSS Normalize: [`@a1rth/css-normalize`](https://www.npmjs.com/package/@a1rth/css-normalize)
-  - Утилитарные миксины и функции в `src/styles/helpers`
-- Полезные зависимости:
-  - [`clsx`](https://www.npmjs.com/package/clsx) — удобное объединение CSS-классов
-  - [`imask`](https://www.npmjs.com/package/imask) — маски для полей ввода
-- Линтинг и форматирование:
-  - [`ESLint`](https://eslint.org/), [`Stylelint`](https://stylelint.io/), [`Prettier`](https://prettier.io/)
-  - Общая конфигурация: [`friendly-frontend-lint-config`](https://www.npmjs.com/package/friendly-frontend-lint-config)
-- Удобства:
-  - Алиасы через `jsconfig.json` (`@/ → src/`)
-  - Готовая структура `src/` с компонентами, секциями, утилитами и layout’ами
-
-## 🚀 Скрипты
-
-```bash
-npm run start         # Запуск в dev-режиме
-npm run build         # Сборка
-npm run preview       # Локальный просмотр сборки
-
-npm run lint:js       # Проверка JS-кода
-npm run lint:js:fix   # Автоисправление JS-кода
-npm run lint:css      # Проверка CSS-кода
-npm run lint:css:fix  # Автоисправление CSS-кода
-npm run format        # Проверка форматирования
-npm run format:fix    # Форматирование
-npm run lint          # Полная проверка кода и форматирования без исправлений
-npm run lint:fix      # Полная проверка с автоисправлением и форматированием
-```
-
-## ⚙️ Структура проекта
-
-```csharp
-├── public/               # Статичные файлы, не обрабатываемые сборщиком
-├── src/
-│   ├── assets/           # Изображения, иконки, фавиконки и шрифты
-│   │   ├── favicons/     # Фавиконки для сайта
-│   │   ├── fonts/        # Подключаемые шрифты (woff2 и пр.)
-│   │   ├── icons/        # SVG-иконки (для спрайта)
-│   │   └── images/       # Остальные изображения
-│   │
-│   ├── components/       # Мелкие переиспользуемые компоненты (Button, Input и т.п.)
-│   ├── constants/        # Константы, enum’ы, конфиги, словари и пр.
-│   ├── layouts/          # Структурные компоненты страницы (Header, Content, Section, Footer)
-│   ├── modules/          # JavaScript-модули (например: OverlayMenu, InputMaskCollection)
-│   ├── pages/            # Файлы страниц (Minista сам роутит всё отсюда)
-│   ├── sections/         # Переиспользуемые секции страниц (Hero, About, Features и пр.)
-│   ├── styles/           # Общие стили проекта (переменные, миксины, сбросы)
-│   ├── utils/            # Утилитарные функции (например: pxToRem, debounce)
-│   ├── global.jsx        # Общий layout для всех страниц (Minista Feature)
-│   └── main.js           # Точка входа JavaScript-логики, запускающейся в браузере
-│
-├── .gitignore             # Список файлов и папок, игнорируемых Git
-├── .prettierignore        # Список файлов и папок, игнорируемых Prettier
-├── eslint.config.js       # Конфигурация ESLint (проверка JS/JSX-кода)
-├── jsconfig.json          # Настройки путей и автодополнения для JS (используется IDE и сборщиком)
-├── minista.config.js      # Конфигурация Minista
-├── package.json           # Зависимости проекта, скрипты, метаинформация
-├── package-lock.json      # Зафиксированные версии всех установленных пакетов
-├── postcss.config.js      # Конфигурация PostCSS (preset-env, pxtorem и пр.)
-├── prettier.config.js     # Настройки автоформатирования кода (Prettier)
-├── README.md              # Документация по проекту (вы сейчас её читаете)
-└── stylelint.config.js    # Конфигурация Stylelint (проверка CSS/SCSS)
-```
-
-## 🧠 Что особенно удобно
-
-- JSX без React — почти как HTML, но мощнее: можно вставлять JS и выносить куски разметки в отдельные файлы
-- [Vite](https://vite.dev/) под капотом — [Minista](https://minista.qranoko.jp/) использует [Vite](https://vite.dev/) как сборщик, так что всё быстро, современно и с поддержкой HMR
-- Компонент `Icon` с автонастройкой цвета. Поверх встроенного `<Icon>` реализован `src/components/Icon.jsx`, который: прокидывает `fill`, `stroke` и использует `currentColor`, чтобы цвет SVG-иконки подстраивался под цвет текста и корректно работал как с fill, так и со stroke-иконками.
-- Мощные Sass-хелперы — в `src/styles/helpers/` лежат:
-  - функции (`fluid`, `fluid-to-laptop`)
-  - миксины для медиа-запросов (`mobile`, `mobile-above`, `hover` и т. п.)
-  - переменные и константы
-  - Утилитарные CSS-классы — для типовых задач:
-    - `.container`
-    - `.visually-hidden`
-    - `.visible-tablet`, `.hidden-tablet`
-    - `.visible-mobile`, `.hidden-mobile`
-
-## 📚 Документация Minista
-
-Если вы не знакомы с Minista — обязательно загляните в официальную документацию:
-
-> 🔗 https://minista.qranoko.jp/docs/
-
-Рекомендуем к прочтению:
-
-- 📄 Конфигурация Minista — `minista.config.js`
-  - https://minista.qranoko.jp/docs/config-file
-- 🧱 Глобальный layout — `src/global.jsx`
-  - https://minista.qranoko.jp/docs/global
-- 🧾 Метаданные страниц — переменная `metadata` в `src/pages/**.jsx`
-  - https://minista.qranoko.jp/docs/metadata
-- 🧠 Компонент `<Head>` — для добавления `<meta>`, `<title>` и прочего
-  - https://minista.qranoko.jp/docs/head
-- 🖼 Компонент `<Image>` — для оптимизированной загрузки изображений
-  - https://minista.qranoko.jp/docs/image
-- 🧩 Компонент `<Icon>` — SVG-спрайт и иконки
-  - https://minista.qranoko.jp/docs/svg-sprite-icon
-    > ☝️ В нашем шаблоне поверх встроенного `<Icon>` реализован компонент-обёртка `src/components/Icon.jsx`.
-    > Он автоматически прокидывает нужные атрибуты (`fill`, `stroke`) и использует `currentColor` —
-    > чтобы удобно управлять цветом иконки через CSS, независимо от оригинальной реализации SVG.
-
-## 📝 Советы
-
-Для TypeScript-версии используйте `npm create friendly-frontend@latest -- --ts`
-
-## ❓ FAQ
-
-### Почему используется JSX без React?
-
-Благодаря Minista. Это позволяет использовать знакомый синтаксис, но без нагрузки от React — идеально для статичных и маркетинговых сайтов.
-
-### Это можно развернуть на Netlify/Vercel?
-
-Да. Это обычная статика — после `npm run build` можно деплоить куда угодно.
-
-## Обратная связь
-
-Если нашли баг или хотите предложить улучшение — открывайте issue или присылайте pull request.
-
-GitHub: https://github.com/aleksanderlamkov/friendly-frontend-starter
-
-## Лицензия
-
-MIT
+- **[Minista](https://minista.qranoko.jp/)** — Мощный генератор статических сайтов на базе Vite.
+- **React (JSX)** — Используется синтаксис JSX для удобной разработки компонентов без лишнего рантайма React на клиенте.
+- **[SCSS](https://sass-lang.com/)** — Гибкая архитектура стилей с использованием переменных, миксинов и БЭМ-методологии.
+- **[Swiper](https://swiperjs.com/)** — Плавные и функциональные слайдеры.
+- **[iMask](https://imask.js.org/)** — Умные маски для полей ввода.
+- **[PostCSS](https://postcss.org/)** — Автоматическая оптимизация CSS и кроссбраузерность.
 
 ---
 
-**Автор:** [Александр Ламков](https://www.youtube.com/@AleksanderLamkov)
+## 🚀 Быстрый старт
+
+### 1. Установка зависимостей
+```bash
+npm install
+```
+
+### 2. Запуск сервера для разработки
+```bash
+npm run start
+```
+Проект будет доступен по адресу `http://localhost:5173/`
+
+### 3. Сборка проекта
+Для создания готовой к деплою статической сборки:
+```bash
+npm run build
+```
+Файлы появятся в папке `dist/`.
+
+---
+
+## ⚙️ Полезные команды (Scripts)
+
+| Команда | Описание |
+|---------|----------|
+| `npm run start` | Запуск локального dev-сервера (Vite + HMR) |
+| `npm run build` | Сборка статического сайта в `dist/` |
+| `npm run preview` | Локальный просмотр готовой сборки |
+| `npm run lint` | Полная проверка кода (JS, CSS, Prettier) |
+| `npm run lint:fix` | Автоматическое исправление ошибок линтинга |
+| `npm run format:fix` | Принудительное форматирование кода через Prettier |
+
+---
+
+## 📁 Структура проекта
+
+```csharp
+├── public/               # Статичные файлы (шрифты, изображения и др.)
+├── src/
+│   ├── assets/           # Исходные ассеты (иконки, изображения)
+│   ├── components/       # Маленькие UI-компоненты (Кнопки, Карточки)
+│   ├── layouts/          # Структурные компоненты (Header, Footer, Section)
+│   ├── sections/         # Большие секции страниц (Hero, Recipes, Categories)
+│   ├── styles/           # Глобальные стили, миксины и переменные
+│   ├── pages/            # Роутинг страниц (index.jsx — главная)
+│   ├── main.js           # Точка входа клиентского JS
+│   └── global.jsx        # Общий лейаут приложения
+└── minista.config.js     # Конфигурация сборщика
+```
+
+---
+
+## 🎨 Стандарты разработки
+
+В проекте настроены строгие правила линтинга для поддержания качества кода:
+- **ESLint** — для проверки JavaScript и JSX.
+- **Stylelint** — для контроля качества SCSS (соблюдение БЭМ и порядка свойств).
+- **Prettier** — для единообразного форматирования.
+
+---
+
+## 📄 Лицензия
+
+Этот проект распространяется под лицензией **MIT**.
+
+---
+
+**Разработано с душой и любовью к еде 👨‍🍳**
