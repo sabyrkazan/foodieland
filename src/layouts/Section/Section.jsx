@@ -6,6 +6,7 @@ export default ({
   className,
   headerMode,
   title,
+  titleClassName,
   titleId,
   description,
   descriptionClassName,
@@ -17,7 +18,7 @@ export default ({
       <header
         className={`section__header section__header--mode-${headerMode} container`}
       >
-        <h2 className="section__title" id={titleId}>
+        <h2 className={clsx('section__title', titleClassName)} id={titleId}>
           {title}
         </h2>
         {description && (
