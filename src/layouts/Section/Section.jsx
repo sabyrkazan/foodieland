@@ -13,16 +13,15 @@ export default ({
   children,
 }) => {
   return (
-    <section
-      className={clsx('section', 'container', className)}
-      aria-labelledby={titleId}
-    >
-      <header className={`section__header section__header--mode-${headerMode}`}>
+    <section className={clsx('section', className)} aria-labelledby={titleId}>
+      <header
+        className={`section__header section__header--mode-${headerMode} container`}
+      >
         <h2 className="section__title" id={titleId}>
           {title}
         </h2>
         {description && (
-          <div className={clsx('section__description',descriptionClassName)}>
+          <div className={clsx('section__description', descriptionClassName)}>
             <p>{description}</p>
           </div>
         )}
@@ -32,7 +31,7 @@ export default ({
           </Button>
         )}
       </header>
-      <div className="section__body">{children}</div>
+      <div className="section__body container">{children}</div>
     </section>
   )
 }
