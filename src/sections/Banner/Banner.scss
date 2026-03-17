@@ -2,11 +2,10 @@
   &__inner {
     display: flex;
     align-items: center;
-    column-gap: 44px;
+    gap: 44px;
 
     @include tablet {
       flex-direction: column;
-      row-gap: 42px;
     }
   }
 
