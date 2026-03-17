@@ -6,6 +6,7 @@ import rainbowChickenSalad from '@/assets/images/daily-recipes/5.jpg'
 import bbqSpicySandwich from '@/assets/images/daily-recipes/6.jpg'
 import veganLettuceWraps from '@/assets/images/daily-recipes/7.jpg'
 import chickenRamenSoup from '@/assets/images/daily-recipes/8.jpg'
+
 import favoriteIcon from '@/assets/icons/heart/heart-fill.svg'
 import unfavoriteIcon from '@/assets/icons/heart/heart-solid.svg'
 
