@@ -15,7 +15,7 @@ export default () => {
       descriptionClassName="recipes__description"
     >
       <Grid className="recipes__grid" columns={3}>
-        {recipes.map(({ id, ...recipe }) =>
+        {recipes.map(({ id, recipe }) =>
           recipe.type === 'banner' ? (
             <RecipeBanner key={id} />
           ) : (
