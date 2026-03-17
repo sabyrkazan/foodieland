@@ -31,6 +31,10 @@
 
     &:not(:last-child) {
       margin-bottom: 24px;
+
+      @include tablet {
+        margin-bottom: 16px;
+      }
     }
   }
 
