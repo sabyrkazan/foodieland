@@ -15,7 +15,7 @@ export default () => {
       headerMode="justify-between"
     >
       <Grid columns={4}>
-        {dailyRecipes.map(({ id, recipe }) => (
+        {dailyRecipes.map(({ id, ...recipe }) => (
           <DailyRecipeCard key={id} {...recipe} />
         ))}
       </Grid>
