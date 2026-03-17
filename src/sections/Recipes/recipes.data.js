@@ -6,6 +6,7 @@ import chickenMeatballsCreamCheese from '@/assets/images/recipes/5.jpg'
 import fruityOrangeBlueberryPancake from '@/assets/images/recipes/7.jpg'
 import onePotChickenRice from '@/assets/images/recipes/8.jpg'
 import creamyChickenBaconPasta from '@/assets/images/recipes/9.jpg'
+
 import favoriteIcon from '@/assets/icons/heart/heart-fill.svg'
 import unfavoriteIcon from '@/assets/icons/heart/heart-solid.svg'
 
