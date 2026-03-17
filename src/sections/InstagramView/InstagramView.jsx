@@ -19,7 +19,7 @@ export default () => {
         <Grid columns={4}>
           {Array.from({ length: 4 }, (_, index) => (
             <Image
-              src={`src/assets/images/instagram-view/${index + 1}.jpg`}
+              src={`@assets/images/instagram-view/${index + 1}.jpg`}
               key={index}
             />
           ))}
