@@ -1,6 +1,9 @@
 import './InstagramView.scss'
 import { Section } from '@/layouts/Section'
 import { Grid } from '@/components/Grid'
+import { Image } from 'minista'
+import { Button } from '@/components/Button'
+import { Icon } from '@/components/Icon'
 
 export default () => {
   return (
@@ -12,7 +15,20 @@ export default () => {
         descriptionClassName="instagram-view__description"
         headerMode="vertical"
       >
-        <Grid className="recipes__grid" columns={4}></Grid>
+        <div className="instagram-view__body">
+          <Grid columns={4}>
+            {Array.from({ length: 4 }, (_, index) => (
+              <Image
+                src={`src/assets/images/instagram-view/${index + 1}.jpg`}
+                key={index}
+              />
+            ))}
+          </Grid>
+          <Button href="/">
+            <span>Visit Our Instagram</span>
+            <Icon name="instagram" hasFill />
+          </Button>
+        </div>
       </Section>
     </div>
   )
