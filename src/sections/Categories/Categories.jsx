@@ -13,7 +13,7 @@ export default () => {
       linkLabel="View All Categories"
     >
       <Grid columns={6}>
-        {categories.map(({ id, category }) => (
+        {categories.map(({ id, ...category }) => (
           <CategoryCard key={id} {...category} />
         ))}
       </Grid>
